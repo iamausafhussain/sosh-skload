@@ -36,7 +36,7 @@ export const Slider = () => {
   }).current;
 
   return (
-    <SafeAreaView style={styles.container}>
+    // <SafeAreaView style={styles.container}>
       <View>
         <FlatList
           data={Slides}
@@ -51,7 +51,7 @@ export const Slider = () => {
         />
         <Pagination data={Slides} scrollX={scrollX} index={index} />
       </View>
-    </SafeAreaView>
+    // </SafeAreaView> 
   );
 };
 

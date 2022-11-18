@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Slider">
+      <Stack.Navigator initialRouteName="Sosh">
         <Stack.Screen name="Sosh" component={Home} />
 		<Stack.Screen name="Slider" component={Slider} />
       </Stack.Navigator>

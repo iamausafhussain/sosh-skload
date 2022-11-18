@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, ScrollView } from "react-native";
 import { Header, ScreenContainer } from "../components";
-import { CircleButton } from "../components/CircleButton";
+import { CircleButton } from "../components";
+import { Slider } from "./Slider";
 
 export function Home() {
   const navigator = useNavigation();
@@ -11,11 +12,11 @@ export function Home() {
   }, []);
 
   return (
-    <ScreenContainer classes="pt-16">
+    <ScreenContainer classes="pt-16 bg-white" scroll>
       <Header />
       <View className="px-2 pt-3">
         <ScrollView
-          horizontal={true}
+          horizontal
           alwaysBounceVertical={false}
           showsHorizontalScrollIndicator={false}
           className="h-28"
@@ -30,6 +31,7 @@ export function Home() {
           <CircleButton title="Health" />
         </ScrollView>
       </View>
+      <Slider />
     </ScreenContainer>
   );
 }

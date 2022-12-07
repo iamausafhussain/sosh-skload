@@ -43,7 +43,7 @@ export default Pagination;
 const styles = StyleSheet.create({
 	container: {
 		position: "absolute",
-		bottom: 35,
+		bottom: 200,
 		flexDirection: "row",
 		width: "100%",
 		alignItems: "center",

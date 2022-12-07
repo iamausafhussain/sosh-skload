@@ -21,7 +21,7 @@ export default function App() {
 		<View style={styles.container}>
 			{isReady ? (
 				<View>
-					<Text>Skeleton Not Loaded</Text>
+					<Text>Skeleton Not Loaded!!</Text>
 				</View>
 			) : (
 				<SkeletonComponent />
